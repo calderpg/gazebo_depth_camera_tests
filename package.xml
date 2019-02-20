@@ -8,15 +8,6 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <depend>roscpp</depend>
-  <depend>std_msgs</depend>
-  <depend>sensor_msgs</depend>
-  <depend>geometry_msgs</depend>
-  <depend>tf2_msgs</depend>
-  <depend>visualization_msgs</depend>
-  <depend>common_robotics_utilities</depend>
-  <depend>voxelized_geometry_tools</depend>
-
   <!-- The export tag contains other, unspecified, tags -->
   <export>
     <!-- You can specify that this package is a metapackage here: -->

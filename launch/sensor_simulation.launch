@@ -47,4 +47,12 @@
     <node name="gazebo_gui" pkg="gazebo_ros" type="gzclient" respawn="false" output="screen" args="$(arg command_arg3)"/>
   </group>
 
+  <!-- Stereo proc for realsense -->
+  <group ns="realsense">
+    <node name="realsense_stereo_proc" pkg="stereo_image_proc" type="stereo_image_proc" output="screen"/>
+  </group>
+
+  <!-- Transform from kinect to realsense cameras -->
+  <node name="camera_transform" pkg="tf" type="static_transform_publisher" output="screen" args="0 0 0 0 0 0 kinect_link realsense_optical_frame 10"/>
+
 </launch>

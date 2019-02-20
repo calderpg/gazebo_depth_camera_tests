@@ -371,7 +371,7 @@
             <noise>
               <type>gaussian</type>
               <mean>0.0</mean>
-              <stddev>0.0</stddev>
+              <stddev>0.01</stddev>
             </noise>
           </camera>
           <camera name="right">
@@ -389,7 +389,7 @@
             <noise>
               <type>gaussian</type>
               <mean>0.0</mean>
-              <stddev>0.0</stddev>
+              <stddev>0.01</stddev>
             </noise>
           </camera>
           <plugin name="stereo_camera_controller" filename="libgazebo_ros_multicamera.so">

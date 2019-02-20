@@ -9,6 +9,8 @@ Panels:
         - /Occupancy1
         - /Occupancy1/Namespaces1
         - /Kinect1
+        - /Realsense1
+        - /Realsense1/Status1
       Splitter Ratio: 0.699999988079071
     Tree Height: 1156
   - Class: rviz/Selection
@@ -91,14 +93,14 @@ Visualization Manager:
       Max Intensity: 4096
       Min Color: 0; 0; 0
       Min Intensity: 0
-      Name: Cam2
+      Name: Realsense
       Position Transformer: XYZ
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.009999999776482582
+      Size (m): 0.0010000000474974513
       Style: Flat Squares
-      Topic: /cam2/depth/points
+      Topic: /realsense/points2
       Unreliable: false
       Use Fixed Frame: true
       Use rainbow: true
@@ -128,25 +130,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 5.3034348487854
+      Distance: 1.620208740234375
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.1736592799425125
-        Y: -0.41431310772895813
-        Z: 0.40523648262023926
+        X: 0.07111595571041107
+        Y: -0.06369998306035995
+        Z: 0.8123331665992737
       Focal Shape Fixed Size: false
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.8003981709480286
+      Pitch: -1.4447964429855347
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.8253981471061707
+      Yaw: 3.1558897495269775
     Saved: ~
 Window Geometry:
   Displays:
