@@ -1,0 +1,414 @@
+<?xml version="1.0"?> 
+<sdf version="1.5">
+  <world name="default">
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <!-- Hole environment -->
+    <model name="hole_environment">
+      <static>true</static>
+      <link name="environment">
+        <collision name="box1_collision">
+          <pose>0.3 0.3 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box1_visual">
+          <pose>0.3 0.3 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <collision name="box2_collision">
+          <pose>0.3 -0.3 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box2_visual">
+          <pose>0.3 -0.3 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <collision name="box3_collision">
+          <pose>-0.3 0.3 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box3_visual">
+          <pose>-0.3 0.3 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <collision name="box4_collision">
+          <pose>-0.3 -0.3 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box4_visual">
+          <pose>-0.3 -0.3 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <collision name="box5_collision">
+          <pose>-0.0 0.0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="box5_visual">
+          <pose>0.0 0.0 0.1 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.2 0.2 0.2</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <collision name="leftwall_collision">
+          <pose>0.0 1.0 1.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2.0 0.01 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="leftwall_visual">
+          <pose>0.0 1.0 1.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2.0 0.01 2.0</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <collision name="rightwall_collision">
+          <pose>0.0 -1.0 1.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2.0 0.01 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="rightwall_visual">
+          <pose>0.0 -1.0 1.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2.0 0.01 2.0</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <collision name="frontwall_collision">
+          <pose>1.0 0.0 1.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 2.0 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="frontwall_visual">
+          <pose>1.0 0.0 1.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 2.0 2.0</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <collision name="backwall_collision">
+          <pose>-1.0 0.0 1.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 2.0 2.0</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="backwall_visual">
+          <pose>-1.0 0.0 1.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 2.0 2.0</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+
+        <!-- <collision name="topwall_collision">
+          <pose>0.0 0.0 2.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2.0 2.0 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="topwall_visual">
+          <pose>0.0 0.0 2.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2.0 2.0 0.01</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual> -->
+
+        <collision name="bottomwall_collision">
+          <pose>0.0 0.0 0.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2.0 2.0 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="bottomwall_visual">
+          <pose>0.0 0.0 0.0 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>2.0 2.0 0.01</size>
+            </box>
+          </geometry>
+          <transparency>0.0</transparency>
+          <material>
+            <ambient>0.25 0.25 0.25 1.0</ambient>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <!-- Ring of depth cameras -->
+    <model name="kinect">
+      <static>true</static>
+      <pose>0.0 0.0 1.0 0.0 1.57079632679 0.0</pose>
+      <link name="kinect_link">
+        <collision name="kinect_collision">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="kinect_visual">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.0 0.5 1.0</ambient>
+          </material>
+        </visual>
+        <sensor name="kinect_camera" type="depth">
+          <update_rate>10</update_rate>
+          <camera>
+            <horizontal_fov>1.047198</horizontal_fov>
+            <image>
+              <width>640</width>
+              <height>480</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.05</near>
+              <far>5</far>
+            </clip>
+          </camera>
+          <plugin name="camera_plugin" filename="libgazebo_ros_openni_kinect.so">
+            <baseline>0.2</baseline>
+            <alwaysOn>true</alwaysOn>
+            <!-- Keep this zero, update_rate in the parent <sensor> tag
+              will control the frame rate. -->
+            <updateRate>0.0</updateRate>
+            <cameraName>kinect_ir</cameraName>
+            <imageTopicName>/kinect/depth/image_raw</imageTopicName>
+            <cameraInfoTopicName>/kinect/depth/camera_info</cameraInfoTopicName>
+            <depthImageTopicName>/kinect/depth/image_raw</depthImageTopicName>
+            <depthImageInfoTopicName>/kinect/depth/camera_info</depthImageInfoTopicName>
+            <pointCloudTopicName>/kinect/depth/points</pointCloudTopicName>
+            <frameName>kinect_link</frameName>
+            <pointCloudCutoff>0.05</pointCloudCutoff>
+            <distortionK1>0</distortionK1>
+            <distortionK2>0</distortionK2>
+            <distortionK3>0</distortionK3>
+            <distortionT1>0</distortionT1>
+            <distortionT2>0</distortionT2>
+            <CxPrime>0</CxPrime>
+            <Cx>0</Cx>
+            <Cy>0</Cy>
+            <focalLength>0</focalLength>
+            <hackBaseline>0</hackBaseline>
+          </plugin>
+        </sensor>
+      </link>
+    </model>
+    <model name="projector">
+      <static>true</static>
+      <pose>0.0 0.0 1.0 0.0 0.0 0.0</pose>
+      <link name="projector_link">
+        <collision name="projector_collision">
+          <geometry>
+            <box>
+              <size>0.05 0.1 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="projector_visual">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.0 0.5 1.0</ambient>
+          </material>
+        </visual>
+        <projector name="texture_projector">
+          <pose>0 0 1.0 0 0 0</pose>
+          <texture>stereo_projection_pattern_high_res_red.png</texture>
+          <fov>0.75</fov>
+          <near_clip>0.1</near_clip>
+          <far_clip>2</far_clip>
+        </projector>
+      </link>
+    </model>
+    <model name="realsense">
+      <static>true</static>
+      <pose>0.0 0.0 1.0 0.0 1.57079632679 0.0</pose>
+      <link name="realsense_link">
+        <collision name="realsense_collision">
+          <geometry>
+            <box>
+              <size>0.05 0.1 0.05</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="realsense_visual">
+          <geometry>
+            <box>
+              <size>0.01 0.01 0.01</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.5 0.0 0.5 1.0</ambient>
+          </material>
+        </visual>
+        <sensor type="multicamera" name="stereo_camera">
+          <update_rate>30.0</update_rate>
+          <camera name="left">
+            <horizontal_fov>1.3962634</horizontal_fov>
+            <image>
+              <width>400</width>
+              <height>400</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.02</near>
+              <far>300</far>
+            </clip>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.0</stddev>
+            </noise>
+          </camera>
+          <camera name="right">
+            <pose>0 -0.075 0 0 0 0</pose>
+            <horizontal_fov>1.3962634</horizontal_fov>
+            <image>
+              <width>400</width>
+              <height>400</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.02</near>
+              <far>300</far>
+            </clip>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.0</stddev>
+            </noise>
+          </camera>
+          <plugin name="stereo_camera_controller" filename="libgazebo_ros_multicamera.so">
+            <alwaysOn>true</alwaysOn>
+            <updateRate>0.0</updateRate>
+            <cameraName>realsense</cameraName>
+            <imageTopicName>image_raw</imageTopicName>
+            <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+            <frameName>realsense_optical_frame</frameName>
+            <!--<rightFrameName>right_camera_optical_frame</rightFrameName>-->
+            <hackBaseline>0.075</hackBaseline>
+            <distortionK1>0.0</distortionK1>
+            <distortionK2>0.0</distortionK2>
+            <distortionK3>0.0</distortionK3>
+            <distortionT1>0.0</distortionT1>
+            <distortionT2>0.0</distortionT2>
+          </plugin>
+        </sensor>
+      </link>
+    </model>
+  </world>
+</sdf>
